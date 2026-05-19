@@ -35,6 +35,10 @@
   <video id="bg-video" autoplay muted loop playsinline>
     <source src="boat.mp4" type="video/mp4">
   </video>
+  <script>
+    var v = document.getElementById('bg-video');
+    v.addEventListener('loadedmetadata', function() { v.playbackRate = 0.1; });
+  </script>
 
   <div class="content">
     <h1>The HDR Videographic Survey</h1>
