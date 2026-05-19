@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The HDR Videographic Survey</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    #bg-video {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      transform: translate(-50%, -50%);
+      z-index: -1;
+      object-fit: cover;
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+      color: white;
+      padding: 40px;
+      background: rgba(0, 0, 0, 0.4);
+      min-height: 100vh;
+    }
+  </style>
+</head>
+<body>
+
+  <video id="bg-video" autoplay muted loop playsinline>
+    <source src="boat.mp4" type="video/mp4">
+  </video>
+
+  <div class="content">
+    <h1>The HDR Videographic Survey</h1>
+    <p>Future home of the HDR Videographic Survey dataset.</p>
+    <p>Contact tcanham at yorku dot ca for early access.</p>
+    <p>This work is licensed under a Creative Commons Attribution 4.0 International License.</p>
+    <a href="https://creativecommons.org/licenses/by/4.0/">
+      <img src="https://licensebuttons.net/l/by/4.0/80x15.png" alt="License: CC BY 4.0">
+    </a>
+  </div>
+
+</body>
+</html>
