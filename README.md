@@ -26,15 +26,14 @@ This work is licensed under a Creative Commons Attribution 4.0 International Lic
 </style>
 
 <div class="video-bg-container">
-  <video autoplay muted loop playsinline id="markdownBgVideo">
-    <source src="boat.mp4" type="video/mp4">
+  <video autoplay muted loop playsinline id="githubBgVideo">
+    <source src="your-video-url.mp4" type="video/mp4">
   </video>
 </div>
 
 <script>
-  // This runs inline within the Markdown reader
-  const bgVid = document.getElementById('markdownBgVideo');
-  if (bgVid) {
-    bgVid.playbackRate = 0.1;
-  }
+  // Listens for the video metadata to load before applying the 0.5x speed
+  document.getElementById('githubBgVideo').addEventListener('loadedmetadata', function() {
+    this.playbackRate = 0.5;
+  });
 </script>
