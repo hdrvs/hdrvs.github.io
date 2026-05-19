@@ -1,7 +1,7 @@
 # The HDR Videographic Survey
 Future home of the HDR Videographic Survey dataset.
 
-Contact tcanham@yorku.ca for early access
+Contact tcanham at yorku dot ca for early access
 
 This work is licensed under a Creative Commons Attribution 4.0 International License.
 
